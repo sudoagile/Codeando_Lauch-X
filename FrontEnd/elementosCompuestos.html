@@ -69,7 +69,7 @@
         <option value="campechanos">Campechanos</option>
         <option value="tripa">Tripa</option>
         <option value="vegetariano">Vegetariano</option>
-        </select>
+    </select>
 
     <h2>Select con Input</h2>
     <label for="refresco">Elige tu refresco favorito</label>
@@ -79,19 +79,60 @@
             <option value="Manzana">
             <option value="Naranja">
             <option value="Mango">
-            <option value="Guayaba"></option>
+            <option value="Guayaba">
+    </datalist>
+    <br><br>
+    <hr>
 
-    
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
 
-    
+    <hr>
 
+    <h2>Input de archivo</h2><br>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
 
+    <!-- CON POR EJEMPLO size="2mb" limitamos el peso -->
 
+    <h2>Input de color</h2><br>
+    <input type="color" id="color1" name="color1"><br><br>
 
+    <h2>Input de Rango</h2>
+    <label for="vol">Volumen (entre 0 y 500):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="500" value="100"><br>
+    <!-- EL value="100" DEFINE EN DONDE EMPIEZA UBICADA LA SEÑAL DE LA BARRA -->
 
+    <hr>
 
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br>
+    <button>Botón 2</button> 
+    <!-- SE PUEDE USAR TAMBIEN DE ESTE TIPO  ES MUY SIMILAR AL ANTERIOR -->
+    <hr>
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/acción.js" id="form1" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit">
+        <!-- <input type="submit" value="Submit"> SI FUERA ASI EL BOTON TENDRIA EL LABEL SUBMIT, 
+            PERO POR DEFCTO TIENE ENVIAR -->
 
+        <input type="reset">
+    </form>
 
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+    <!-- ESTE ULTIMO BOTON FUNCIONA ASI ESTE FUERA DEL FORM YA QUE SE ENCUENTRA REFERENCIADO POR:
+    form="form1" -->
+
+    <hr>
 
 </body>
 </html>
